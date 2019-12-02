@@ -1,0 +1,27 @@
+<p>simple works!</p>
+<form>
+
+    <label>
+        Name:
+        <input [formControl]="name">
+    </label>
+    <label>
+        Phone:
+        <input [formControl]="phone">
+    </label>
+
+</form>
+<table border="2">
+    <tr>
+        <td>name</td>
+        <td>phone</td>
+    </tr>
+    <tr *ngFor="let c of simpleArray">
+        <td>{{ c.name }}</td>
+        <td>{{ c.phone }}</td>
+    </tr>
+</table>
+
+  <p>
+    <button (click)="addtoSimpleArray()">Update Name</button>
+  </p>
